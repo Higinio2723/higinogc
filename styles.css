@@ -135,3 +135,51 @@ footer { text-align: center; padding: 2rem; color: var(--muted); border-top: 1px
 @media (max-width: 560px) {
   .nav nav { gap: 0.8rem; font-size: 0.85rem; }
 }
+
+/* Hero con imagen */
+.hero { flex-direction: row; align-items: center; justify-content: space-between; gap: 2rem; }
+.hero-texto { display: flex; flex-direction: column; gap: 0.5rem; flex: 1; }
+.hero-img { position: relative; flex: 1; max-width: 420px; }
+.hero-img img { width: 100%; height: auto; display: block; border-radius: 20px; }
+.avatar {
+  position: absolute;
+  right: -10px;
+  bottom: -18px;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.6rem;
+  border: 4px solid var(--bg);
+}
+
+/* Métricas */
+.metricas { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; padding: 2rem 0; }
+.metricas div { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.2rem; text-align: center; }
+.metricas strong { display: block; font-size: 2rem; color: var(--accent); }
+.metricas span { color: var(--muted); font-size: 0.85rem; }
+
+/* Logos */
+.logos { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+.logos figure { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 0.9rem 0.5rem 0.6rem; text-align: center; transition: transform 0.2s; }
+.logos figure:hover { transform: translateY(-4px); }
+.logos img { width: 44px; height: 44px; object-fit: contain; }
+.logos figcaption { margin-top: 0.4rem; font-size: 0.75rem; color: #444; }
+
+/* Línea de tiempo */
+.timeline { list-style: none; border-left: 2px solid var(--border); padding-left: 1.5rem; display: grid; gap: 2rem; }
+.timeline li { position: relative; }
+.timeline li::before { content: ""; position: absolute; left: -1.95rem; top: 0.4rem; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); }
+.timeline .fecha { font-size: 0.8rem; color: var(--accent); font-weight: 600; }
+.timeline h3 { margin: 0.2rem 0 0.4rem; }
+.timeline .tags { font-size: 0.8rem; color: var(--accent); margin-top: 0.4rem; }
+.seccion .chips { margin-top: 0.5rem; }
+
+@media (max-width: 760px) {
+  .hero { flex-direction: column-reverse; min-height: auto; padding: 3rem 0; }
+  .hero-img { max-width: 320px; }
+}

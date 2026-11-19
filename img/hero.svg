@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" role="img">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5b8cff"/>
+      <stop offset="1" stop-color="#8a5bff"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="320" rx="20" fill="url(#g)" opacity="0.12"/>
+  <g stroke="#5b8cff" stroke-width="2" opacity="0.6" fill="none">
+    <path d="M200 70 L90 170 M200 70 L200 170 M200 70 L310 170 M90 170 L90 250 M200 170 L200 250 M310 170 L310 250 M90 170 L200 170 L310 170"/>
+  </g>
+  <g fill="url(#g)">
+    <rect x="150" y="40" width="100" height="60" rx="12"/>
+    <rect x="40" y="145" width="100" height="50" rx="12"/>
+    <rect x="150" y="145" width="100" height="50" rx="12"/>
+    <rect x="260" y="145" width="100" height="50" rx="12"/>
+    <rect x="40" y="235" width="100" height="45" rx="12" opacity="0.8"/>
+    <rect x="150" y="235" width="100" height="45" rx="12" opacity="0.8"/>
+    <rect x="260" y="235" width="100" height="45" rx="12" opacity="0.8"/>
+  </g>
+  <g fill="#fff" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">
+    <text x="200" y="76">API Gateway</text>
+    <text x="90" y="175">Auth</text>
+    <text x="200" y="175">Cuentas</text>
+    <text x="310" y="175">Batch</text>
+    <text x="90" y="263">Oracle</text>
+    <text x="200" y="263">PostgreSQL</text>
+    <text x="310" y="263">Kubernetes</text>
+  </g>
+</svg>
