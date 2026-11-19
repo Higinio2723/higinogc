@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img">
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5b8cff"/>
+      <stop offset="1" stop-color="#8a5bff"/>
+    </linearGradient>
+    <clipPath id="circulo"><circle cx="100" cy="100" r="100"/></clipPath>
+  </defs>
+  <g clip-path="url(#circulo)">
+    <rect width="200" height="200" fill="url(#fondo)"/>
+    <path d="M30 210 C30 150 65 135 100 135 C135 135 170 150 170 210 Z" fill="#1f2a44"/>
+    <path d="M82 135 L100 160 L118 135 Z" fill="#fff"/>
+    <rect x="88" y="115" width="24" height="26" rx="8" fill="#d9a67a"/>
+    <ellipse cx="100" cy="84" rx="34" ry="40" fill="#e8b88c"/>
+    <path d="M65 78 C62 40 100 30 122 42 C138 50 138 68 135 78 C128 62 108 58 94 60 C80 62 70 66 65 78 Z" fill="#2b2118"/>
+    <circle cx="87" cy="86" r="3.5" fill="#2b2118"/>
+    <circle cx="113" cy="86" r="3.5" fill="#2b2118"/>
+    <path d="M90 104 C96 110 104 110 110 104" stroke="#8a4b2f" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <g fill="none" stroke="#1f2a44" stroke-width="3">
+      <circle cx="87" cy="86" r="10"/>
+      <circle cx="113" cy="86" r="10"/>
+      <path d="M97 86 L103 86"/>
+    </g>
+  </g>
+</svg>
